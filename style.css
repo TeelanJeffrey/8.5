@@ -1,0 +1,95 @@
+body {
+    font-family: "Tinos", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 4rem;
+    font-style: normal;
+    background-color: black;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    padding: 5rem 0rem;
+    color: white;
+}
+.logo {
+    width: 15rem;
+}
+.animelogo {
+    display: flex;
+    justify-self: flex-start;
+}
+.gamelogo {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.ggstlogo .animlogo {
+    width: 20rem;
+}
+p {
+    width: auto;
+    height: auto;
+    margin: 5rem 0rem;
+    text-indent: 4rem;
+    text-align: left;
+}
+.news {
+    height: auto;
+    margin: 50px 10rem;
+    padding: 90px 108px;
+    background-color: white;
+}
+.anime {
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+    float: right;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo,.animlogo {
+        display: none;
+    }
+    .animlogo {
+        width: 15rem;
+    }
+    .news {
+        margin: 20px 5rem;
+        padding: 60px 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo, .gamelogo {
+        display: none;
+    }
+    .ggstlogo, .animlogo {
+        width: 10rem;
+    }
+    .news {
+        margin: 10px 2rem;
+        padding: 30px 20px;
+    }
+    p {
+        text-indent: 2rem;
+        margin: 2rem 0;
+    }
+    h1 {
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
+}
